@@ -1,0 +1,359 @@
+
+<%= render 'partials/modals' %>
+<%= render 'partials/sidebar', locals: {category: :pages, subcategory: :project} %>
+<%= render 'partials/sidebar-sm', locals: {category: :pages, subcategory: :project} %>
+<%= render 'partials/topnav', locals: {category: :pages, subcategory: :project} %>
+<div class="main-content">
+
+      <%= render 'partials/topbar' %>
+
+      <!-- HEADER -->
+      <div class="header">
+        <div class="container-fluid">
+          
+          <!-- Body -->
+          <div class="header-body">
+            <div class="row">
+              <div class="col-md-12 col-lg-8 col-xl-9">
+                
+ <!-- Pretitle -->
+                <h6 class="header-pretitle">
+                  Manage your team
+                </h6>
+
+                <!-- Title -->
+                <h1 class="header-title">
+                  Team Name
+                </h1>
+
+              </div>
+              <div class="col-md-12 col-lg-4 col-xl-3">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="row align-items-center">
+                      <div class="col">
+
+                        <h6 class="card-title text-uppercase text-muted mb-2">
+                          Team wallet
+                        </h6>
+                        
+                        <span class="h2 mb-0">
+                          £500.00
+                        </span>
+
+                      </div>
+                      <div class="col-auto">
+                        
+                        <span class="h2 fe fe-dollar-sign text-muted mb-0"></span>
+
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+                
+              </div>
+
+            </div> <!-- / .row -->
+          
+            <div class="row align-items-center">
+              <div class="col">
+                
+                <!-- Nav -->
+                <ul class="nav nav-tabs nav-overflow header-tabs" style="margin-top: -40px;">
+                  <li class="nav-item">
+                    <a href="/manage_team.html" class="nav-link">
+                      Insights
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="/manage_team_people.html" class="nav-link active">
+                      Members
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="/manage_team_rewards.html" class="nav-link">
+                      Rewards
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link">
+                      Settings
+                    </a>
+                  </li>
+                </ul>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div> <!-- / .header -->
+
+      <!-- CONTENT -->
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div class="card">
+              <div class="card-header">
+                <div class="row align-items-center">
+                  <div class="col">
+                    
+                    <!-- Title -->
+                    <h4 class="card-header-title">
+                      Team members
+                    </h4>
+
+                  </div>
+                  <div class="col-auto">
+                    
+                    <a href="#modalMembers" class="btn btn-primary btn-sm" data-toggle="modal">
+                      Add new
+                    </a>
+
+                  </div>
+                </div> <!-- / .row -->
+              </div>
+              <div class="card-header">
+                <div class="row">
+                  <div class="col-12">
+                    
+                    <!-- Form -->
+                    <form>
+                      <div class="input-group input-group-flush input-group-merge">
+                        <input type="search" class="form-control form-control-prepended search" placeholder="Search">
+                        <div class="input-group-prepend">
+                          <div class="input-group-text">
+                            <span class="fe fe-search"></span>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+
+                  </div>
+                </div> <!-- / .row -->
+              </div>
+              <div class="table-responsive mb-0">
+                <table class="table table-nowrap card-table">
+                  <thead>
+                    <tr>
+                      <th>
+                        Name
+                      </th>
+                      <th>
+                       Values
+                      </th>
+                      <th>
+                       Balance
+                      </th>
+                      <th>
+                       Action
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+
+                        <!-- Avatar -->
+                        <a href="#" class="avatar avatar-xs d-inline-block mr-2">
+                          <img src="/packs/media/images/avatars/profiles/avatar-1-b42f730bc711cff2f549ff3a1e515408.jpg" alt="..." class="avatar-img rounded-circle">
+                        </a>
+                        
+                        <!-- Title -->
+                        <span>Dianna Smiley</span>
+
+                      </td>
+                      
+                      <td>
+                        <span class="badge badge-soft-secondary">Work-life balance</span>
+                      </td>
+                      <td>
+                        £20.00
+                      </td>
+                      <td>
+                        <div class="dropdown">
+
+                          <!-- Toggle -->
+                          <a href="#" class="dropdown-toggle btn btn-sm btn-primary" data-toggle="dropdown">
+                            Give
+                          </a>
+
+                          <!-- Menu -->
+                          <div class="dropdown-menu dropdown-menu-right">
+                            <a class="dropdown-item">
+                              Reward
+                            </a>
+                            <a class="dropdown-item">
+                              Recognition
+                            </a>
+                          </div>
+
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+
+                        <!-- Avatar -->
+                        <a href="#" class="avatar avatar-xs d-inline-block mr-2">
+                          <img src="/packs/media/images/avatars/profiles/avatar-2-a6ecdbaaf952c7ea6eb63f73b0ffd5bb.jpg" alt="..." class="avatar-img rounded-circle">
+                        </a>
+                        
+                        <!-- Title -->
+                        <span>Ab Hadley</span>
+
+                      </td>
+                      <td>
+                        <span class="badge badge-soft-secondary">Learning & growth</span>
+                      </td>
+                      <td>
+                        £20.00
+                      </td>
+                      <td>
+                        <div class="dropdown">
+
+                          <!-- Toggle -->
+                          <a href="#" class="dropdown-toggle btn btn-sm btn-primary" data-toggle="dropdown">
+                            Give
+                          </a>
+
+                          <!-- Menu -->
+                          <div class="dropdown-menu dropdown-menu-right">
+                            <a class="dropdown-item">
+                              Reward
+                            </a>
+                            <a class="dropdown-item">
+                              Recognition
+                            </a>
+                          </div>
+
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+
+                        <!-- Avatar -->
+                        <a href="#" class="avatar avatar-xs d-inline-block mr-2">
+                          <img src="/packs/media/images/avatars/profiles/avatar-3-79d5ea92dc98be7100296929ecc09b58.jpg" alt="..." class="avatar-img rounded-circle">
+                        </a>
+                        
+                        <!-- Title -->
+                        <span>Adolfo Hess</span>
+
+                      </td>
+                      <td>
+                        <span class="badge badge-soft-secondary">Leadership</span>
+                      </td>
+                      <td>
+                        £20.00
+                      </td>
+                      <td>
+                        <div class="dropdown">
+
+                          <!-- Toggle -->
+                          <a href="#" class="dropdown-toggle btn btn-sm btn-primary" data-toggle="dropdown">
+                            Give
+                          </a>
+
+                          <!-- Menu -->
+                          <div class="dropdown-menu dropdown-menu-right">
+                            <a class="dropdown-item">
+                              Reward
+                            </a>
+                            <a class="dropdown-item">
+                              Recognition
+                            </a>
+                          </div>
+
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+
+                        <!-- Avatar -->
+                        <a href="#" class="avatar avatar-xs d-inline-block mr-2">
+                          <img src="/packs/media/images/avatars/profiles/avatar-4-e5f2b1297fe89ea2709d9a0f352965bf.jpg" alt="..." class="avatar-img rounded-circle">
+                        </a>
+                        
+                        <!-- Title -->
+                        <span>Daniela Dewitt</span>
+
+                      </td>
+                     <td>
+                        <span class="badge badge-soft-secondary">Learning & growth</span>
+                      </td>
+                      <td>
+                        £20.00
+                      </td>
+                      <td>
+                        <div class="dropdown">
+
+                          <!-- Toggle -->
+                          <a href="#" class="dropdown-toggle btn btn-sm btn-primary" data-toggle="dropdown">
+                            Give
+                          </a>
+
+                          <!-- Menu -->
+                          <div class="dropdown-menu dropdown-menu-right">
+                            <a class="dropdown-item">
+                              Reward
+                            </a>
+                            <a class="dropdown-item">
+                              Recognition
+                            </a>
+                          </div>
+
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+
+                        <!-- Avatar -->
+                        <a href="#" class="avatar avatar-xs d-inline-block mr-2">
+                          <img src="/packs/media/images/avatars/profiles/avatar-5-f99be24352700d68fae6976fc4b7bb71.jpg" alt="..." class="avatar-img rounded-circle">
+                        </a>
+                        
+                        <!-- Title -->
+                        <span>Miyah Myles</span>
+
+                      </td>
+                      <td>
+                        <span class="badge badge-soft-secondary">Work-life balance</span>
+                      </td>
+                      <td>
+                        £20.00
+                      </td>
+                      <td>
+                        <div class="dropdown">
+
+                          <!-- Toggle -->
+                          <a href="#" class="dropdown-toggle btn btn-sm btn-primary" data-toggle="dropdown">
+                            Give
+                          </a>
+
+                          <!-- Menu -->
+                          <div class="dropdown-menu dropdown-menu-right">
+                            <a class="dropdown-item">
+                              Reward
+                            </a>
+                            <a class="dropdown-item">
+                              Recognition
+                            </a>
+                          </div>
+
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
