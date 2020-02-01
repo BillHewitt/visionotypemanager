@@ -81,7 +81,7 @@
         <% if current_page?('/for_you.html') || current_page?('/for_you_awards.html') || current_page?('/for_you_recognition.html') || current_page?('/for_you_rewards.html') %>
 
         <li class="nav-item">
-          <a class="nav-link active" href="for_you_rewards.html" role="button" aria-expanded="<%= locals[:category] == 'pages' %>" aria-controls="sidebarPages">
+          <a class="nav-link active" href="for_you.html" role="button" aria-expanded="<%= locals[:category] == 'pages' %>" aria-controls="sidebarPages">
             <i class="fe fe-gift"></i> For you
           </a>
         </li>
@@ -89,7 +89,7 @@
         <% else %>
 
         <li class="nav-item">
-          <a class="nav-link" href="for_you_rewards.html" role="button" aria-expanded="<%= locals[:category] == 'pages' %>" aria-controls="sidebarPages">
+          <a class="nav-link" href="for_you.html" role="button" aria-expanded="<%= locals[:category] == 'pages' %>" aria-controls="sidebarPages">
             <i class="fe fe-gift"></i> For you
           </a>
         </li>

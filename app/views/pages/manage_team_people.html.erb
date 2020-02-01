@@ -28,7 +28,7 @@
 
               </div>
               <div class="col-md-12 col-lg-4 col-xl-3">
-                <div class="card">
+                 <a href="yourwalletadmin" class="card">
                   <div class="card-body">
                     <div class="row align-items-center">
                       <div class="col">
@@ -50,7 +50,7 @@
                     </div>
 
                   </div>
-                </div>
+                </a>
                 
               </div>
 
@@ -94,14 +94,16 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col-12">
-            <div class="card">
+
+            <!-- Card -->
+            <div class="card" data-toggle="lists" data-options='{"valueNames": ["orders-order", "orders-product", "orders-date", "orders-total", "orders-status", "orders-method"]}'>
               <div class="card-header">
                 <div class="row align-items-center">
                   <div class="col">
                     
                     <!-- Title -->
                     <h4 class="card-header-title">
-                      Team members
+                      Team members <span class="badge badge-soft-secondary">5 active</span>
                     </h4>
 
                   </div>
@@ -115,48 +117,87 @@
                 </div> <!-- / .row -->
               </div>
               <div class="card-header">
-                <div class="row">
-                  <div class="col-12">
-                    
-                    <!-- Form -->
-                    <form>
-                      <div class="input-group input-group-flush input-group-merge">
-                        <input type="search" class="form-control form-control-prepended search" placeholder="Search">
-                        <div class="input-group-prepend">
-                          <div class="input-group-text">
-                            <span class="fe fe-search"></span>
-                          </div>
-                        </div>
+                <div class="row align-items-center">
+                  <div class="col">
+
+                    <!-- Search -->
+                    <form class="row align-items-center">
+                      <div class="col-auto pr-0">
+                        <span class="fe fe-search text-muted"></span>
+                      </div>
+                      <div class="col">
+                          <input type="search" class="form-control form-control-flush search" placeholder="Search">
                       </div>
                     </form>
+                    
+                  </div>
+                  <div class="col-auto">
+                    
+                    <!-- Button -->
+
+                    <div class="dropdown">
+                      <button class="btn btn-sm btn-white dropdown-toggle" type="button" id="bulkActionDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        {Bulk action}
+                      </button>
+                      <div class="dropdown-menu dropdown-menu-right" aria-labelledby="bulkActionDropdown">
+                        <a class="dropdown-item" href="#!">Shout-out</a>
+                        <a class="dropdown-item" href="#!">Reward</a>
+                        <hr>
+                        <a class="dropdown-item" href="#!">Credit balance</a> 
+                      </div>
+                    </div>
 
                   </div>
                 </div> <!-- / .row -->
               </div>
-              <div class="table-responsive mb-0">
-                <table class="table table-nowrap card-table">
+              <div class="table-responsive">
+                <table class="table table-sm table-nowrap card-table">
                   <thead>
                     <tr>
                       <th>
-                        Name
+                        <div class="custom-control custom-checkbox table-checkbox">
+                          <input type="checkbox" class="custom-control-input" name="ordersSelect" id="ordersSelectAll">
+                          <label class="custom-control-label" for="ordersSelectAll">
+                            &nbsp;
+                          </label>
+                        </div>
                       </th>
                       <th>
-                       Values
+                        <a href="#" class="text-muted sort" data-sort="orders-order">
+                          Name
+                        </a>
                       </th>
                       <th>
-                       Balance
+                        <a href="#" class="text-muted">
+                          Values
+                        </a>
                       </th>
                       <th>
-                       Action
+                        <a href="#" class="text-muted sort" data-sort="orders-date">
+                          Balance 
+                        </a>
+                      </th>
+                      <th>
+                        <a href="#" class="text-muted">
+                          Actions
+                        </a>
                       </th>
                     </tr>
                   </thead>
-                  <tbody>
+                  <tbody class="list">
                     <tr>
+                      <td>
+                        <div class="custom-control custom-checkbox table-checkbox">
+                          <input type="checkbox" class="custom-control-input" name="ordersSelect" id="ordersSelectOne">
+                          <label class="custom-control-label" for="ordersSelectOne">
+                            &nbsp;
+                          </label>
+                        </div>
+                      </td>
                       <td>
 
                         <!-- Avatar -->
-                        <a href="#" class="avatar avatar-xs d-inline-block mr-2">
+                        <a href="/for_youmanager" class="avatar avatar-xs d-inline-block mr-2">
                           <img src="/packs/media/images/avatars/profiles/avatar-1-b42f730bc711cff2f549ff3a1e515408.jpg" alt="..." class="avatar-img rounded-circle">
                         </a>
                         
@@ -164,14 +205,13 @@
                         <span>Dianna Smiley</span>
 
                       </td>
-                      
-                      <td>
+                      <td class="orders-product">
                         <span class="badge badge-soft-secondary">Work-life balance</span>
                       </td>
-                      <td>
-                        £20.00
+                      <td class="orders-date">
+                        £20
                       </td>
-                      <td>
+                      <td class="orders-total">
                         <div class="dropdown">
 
                           <!-- Toggle -->
@@ -181,18 +221,42 @@
 
                           <!-- Menu -->
                           <div class="dropdown-menu dropdown-menu-right">
-                            <a class="dropdown-item">
-                              Reward
-                            </a>
-                            <a class="dropdown-item">
-                              Recognition
-                            </a>
+                             <a class="dropdown-item" href="#!">Shout-out</a>
+                              <a class="dropdown-item" href="#!">Reward</a>
+                              <hr>
+                              <a class="dropdown-item" href="#!">Credit balance</a> 
                           </div>
+
+
+              
+
+
 
                         </div>
                       </td>
+                      <td class="text-right">
+                        <div class="dropdown">
+                          <a href="#" class="dropdown-ellipses dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fe fe-more-vertical"></i>
+                          </a>
+                          <div class="dropdown-menu dropdown-menu-right">
+                            <a href="#!" class="dropdown-item">
+                              Remove from team
+                            </a>
+                          </div>
+                        </div>
+                      </td>
                     </tr>
+
                     <tr>
+                      <td>
+                        <div class="custom-control custom-checkbox table-checkbox">
+                          <input type="checkbox" class="custom-control-input" name="ordersSelect" id="ordersSelectOne">
+                          <label class="custom-control-label" for="ordersSelectOne">
+                            &nbsp;
+                          </label>
+                        </div>
+                      </td>
                       <td>
 
                         <!-- Avatar -->
@@ -204,13 +268,13 @@
                         <span>Ab Hadley</span>
 
                       </td>
-                      <td>
+                      <td class="orders-product">
                         <span class="badge badge-soft-secondary">Learning & growth</span>
                       </td>
-                      <td>
-                        £20.00
+                      <td class="orders-date">
+                        £20
                       </td>
-                      <td>
+                      <td class="orders-total">
                         <div class="dropdown">
 
                           <!-- Toggle -->
@@ -226,12 +290,34 @@
                             <a class="dropdown-item">
                               Recognition
                             </a>
+                            <a class="dropdown-item" href="#!">Credit balance</a> 
                           </div>
 
                         </div>
                       </td>
+                      <td class="text-right">
+                        <div class="dropdown">
+                          <a href="#" class="dropdown-ellipses dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fe fe-more-vertical"></i>
+                          </a>
+                          <div class="dropdown-menu dropdown-menu-right">
+                            <a href="#!" class="dropdown-item">
+                              Remove from team
+                            </a>
+                          </div>
+                        </div>
+                      </td>
                     </tr>
+
                     <tr>
+                      <td>
+                        <div class="custom-control custom-checkbox table-checkbox">
+                          <input type="checkbox" class="custom-control-input" name="ordersSelect" id="ordersSelectOne">
+                          <label class="custom-control-label" for="ordersSelectOne">
+                            &nbsp;
+                          </label>
+                        </div>
+                      </td>
                       <td>
 
                         <!-- Avatar -->
@@ -243,13 +329,13 @@
                         <span>Adolfo Hess</span>
 
                       </td>
-                      <td>
+                      <td class="orders-product">
                         <span class="badge badge-soft-secondary">Leadership</span>
                       </td>
-                      <td>
-                        £20.00
+                      <td class="orders-date">
+                        £20
                       </td>
-                      <td>
+                      <td class="orders-total">
                         <div class="dropdown">
 
                           <!-- Toggle -->
@@ -265,12 +351,36 @@
                             <a class="dropdown-item">
                               Recognition
                             </a>
+                            <a class="dropdown-item">
+                              Credit
+                            </a>
                           </div>
 
                         </div>
                       </td>
+                      <td class="text-right">
+                        <div class="dropdown">
+                          <a href="#" class="dropdown-ellipses dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fe fe-more-vertical"></i>
+                          </a>
+                          <div class="dropdown-menu dropdown-menu-right">
+                            <a href="#!" class="dropdown-item">
+                              Remove from team
+                            </a>
+                          </div>
+                        </div>
+                      </td>
                     </tr>
+
                     <tr>
+                      <td>
+                        <div class="custom-control custom-checkbox table-checkbox">
+                          <input type="checkbox" class="custom-control-input" name="ordersSelect" id="ordersSelectOne">
+                          <label class="custom-control-label" for="ordersSelectOne">
+                            &nbsp;
+                          </label>
+                        </div>
+                      </td>
                       <td>
 
                         <!-- Avatar -->
@@ -282,13 +392,13 @@
                         <span>Daniela Dewitt</span>
 
                       </td>
-                     <td>
+                      <td class="orders-product">
                         <span class="badge badge-soft-secondary">Learning & growth</span>
                       </td>
-                      <td>
-                        £20.00
+                      <td class="orders-date">
+                        £20
                       </td>
-                      <td>
+                      <td class="orders-total">
                         <div class="dropdown">
 
                           <!-- Toggle -->
@@ -304,12 +414,36 @@
                             <a class="dropdown-item">
                               Recognition
                             </a>
+                            <a class="dropdown-item">
+                              Credit
+                            </a>
                           </div>
 
                         </div>
                       </td>
+                      <td class="text-right">
+                        <div class="dropdown">
+                          <a href="#" class="dropdown-ellipses dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fe fe-more-vertical"></i>
+                          </a>
+                          <div class="dropdown-menu dropdown-menu-right">
+                            <a href="#!" class="dropdown-item">
+                              Remove from team
+                            </a>
+                          </div>
+                        </div>
+                      </td>
                     </tr>
+
                     <tr>
+                      <td>
+                        <div class="custom-control custom-checkbox table-checkbox">
+                          <input type="checkbox" class="custom-control-input" name="ordersSelect" id="ordersSelectOne">
+                          <label class="custom-control-label" for="ordersSelectOne">
+                            &nbsp;
+                          </label>
+                        </div>
+                      </td>
                       <td>
 
                         <!-- Avatar -->
@@ -321,13 +455,13 @@
                         <span>Miyah Myles</span>
 
                       </td>
-                      <td>
+                      <td class="orders-product">
                         <span class="badge badge-soft-secondary">Work-life balance</span>
                       </td>
-                      <td>
-                        £20.00
+                      <td class="orders-date">
+                        £20
                       </td>
-                      <td>
+                      <td class="orders-total">
                         <div class="dropdown">
 
                           <!-- Toggle -->
@@ -343,17 +477,33 @@
                             <a class="dropdown-item">
                               Recognition
                             </a>
+                            <a class="dropdown-item">
+                              Credit
+                            </a>
                           </div>
 
                         </div>
                       </td>
+                      <td class="text-right">
+                        <div class="dropdown">
+                          <a href="#" class="dropdown-ellipses dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fe fe-more-vertical"></i>
+                          </a>
+                          <div class="dropdown-menu dropdown-menu-right">
+                            <a href="#!" class="dropdown-item">
+                              Remove from team
+                            </a>
+                          </div>
+                        </div>
+                      </td>
                     </tr>
+                    
                   </tbody>
                 </table>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
 
+
+
+           
 

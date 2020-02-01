@@ -1,58 +1,70 @@
 {
-  "app.css": "/packs/css/app-ee7aec9e.css",
-  "app.js": "/packs/js/app-eb7c6fcb54b1725c8177.js",
-  "app.js.map": "/packs/js/app-eb7c6fcb54b1725c8177.js.map",
-  "application.js": "/packs/js/application-4ac0f01db9fdc19bc5f0.js",
-  "application.js.map": "/packs/js/application-4ac0f01db9fdc19bc5f0.js.map",
-  "dark-mode.css": "/packs/css/dark-mode-000ae7e0.css",
-  "dark-mode.js": "/packs/js/dark-mode-59c79832f09e220ba827.js",
-  "dark-mode.js.map": "/packs/js/dark-mode-59c79832f09e220ba827.js.map",
+  "app.css": "/packs/css/app-390d93aa.css",
+  "app.css.map": "/packs/css/app-390d93aa.css.map",
+  "app.js": "/packs/js/app-0750e9cd46217393624c.js",
+  "app.js.map": "/packs/js/app-0750e9cd46217393624c.js.map",
+  "application.js": "/packs/js/application-80a4f5233d7e6c4f2d7f.js",
+  "application.js.map": "/packs/js/application-80a4f5233d7e6c4f2d7f.js.map",
+  "dark-mode.css": "/packs/css/dark-mode-44013cf9.css",
+  "dark-mode.css.map": "/packs/css/dark-mode-44013cf9.css.map",
+  "dark-mode.js": "/packs/js/dark-mode-759f062f631dbb2b3371.js",
+  "dark-mode.js.map": "/packs/js/dark-mode-759f062f631dbb2b3371.js.map",
   "entrypoints": {
     "app": {
       "css": [
-        "/packs/css/app-ee7aec9e.css"
+        "/packs/css/app-390d93aa.css"
       ],
       "js": [
-        "/packs/js/app-eb7c6fcb54b1725c8177.js"
+        "/packs/js/app-0750e9cd46217393624c.js"
+      ],
+      "css.map": [
+        "/packs/css/app-390d93aa.css.map"
       ],
       "js.map": [
-        "/packs/js/app-eb7c6fcb54b1725c8177.js.map"
+        "/packs/js/app-0750e9cd46217393624c.js.map"
       ]
     },
     "application": {
       "js": [
-        "/packs/js/application-4ac0f01db9fdc19bc5f0.js"
+        "/packs/js/application-80a4f5233d7e6c4f2d7f.js"
       ],
       "js.map": [
-        "/packs/js/application-4ac0f01db9fdc19bc5f0.js.map"
+        "/packs/js/application-80a4f5233d7e6c4f2d7f.js.map"
       ]
     },
     "dark-mode": {
       "css": [
-        "/packs/css/dark-mode-000ae7e0.css"
+        "/packs/css/dark-mode-44013cf9.css"
       ],
       "js": [
-        "/packs/js/dark-mode-59c79832f09e220ba827.js"
+        "/packs/js/dark-mode-759f062f631dbb2b3371.js"
+      ],
+      "css.map": [
+        "/packs/css/dark-mode-44013cf9.css.map"
       ],
       "js.map": [
-        "/packs/js/dark-mode-59c79832f09e220ba827.js.map"
+        "/packs/js/dark-mode-759f062f631dbb2b3371.js.map"
       ]
     },
     "light-mode": {
       "css": [
-        "/packs/css/light-mode-fadbc88c.css"
+        "/packs/css/light-mode-11f149e2.css"
       ],
       "js": [
-        "/packs/js/light-mode-0e63e621f1d62bc87e7c.js"
+        "/packs/js/light-mode-b100111bd4d7c5e1e5be.js"
+      ],
+      "css.map": [
+        "/packs/css/light-mode-11f149e2.css.map"
       ],
       "js.map": [
-        "/packs/js/light-mode-0e63e621f1d62bc87e7c.js.map"
+        "/packs/js/light-mode-b100111bd4d7c5e1e5be.js.map"
       ]
     }
   },
-  "light-mode.css": "/packs/css/light-mode-fadbc88c.css",
-  "light-mode.js": "/packs/js/light-mode-0e63e621f1d62bc87e7c.js",
-  "light-mode.js.map": "/packs/js/light-mode-0e63e621f1d62bc87e7c.js.map",
+  "light-mode.css": "/packs/css/light-mode-11f149e2.css",
+  "light-mode.css.map": "/packs/css/light-mode-11f149e2.css.map",
+  "light-mode.js": "/packs/js/light-mode-b100111bd4d7c5e1e5be.js",
+  "light-mode.js.map": "/packs/js/light-mode-b100111bd4d7c5e1e5be.js.map",
   "media/cerebrisans/cerebrisans-bold.eot": "/packs/media/cerebrisans/cerebrisans-bold-43a5f55c.eot",
   "media/cerebrisans/cerebrisans-bold.svg": "/packs/media/cerebrisans/cerebrisans-bold-9d5cea30.svg",
   "media/cerebrisans/cerebrisans-bold.ttf": "/packs/media/cerebrisans/cerebrisans-bold-4180e23f.ttf",
