@@ -11,9 +11,14 @@ module VisionotypeRails6
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 6.0
 
-    config.serve_static_assets = true
 
     config.secret_key_base = 'blipblapblup'
+
+
+    config.cache_classes = true
+config.serve_static_assets = true
+config.assets.compile = true
+config.assets.digest = true
 
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration can go into files in config/initializers
